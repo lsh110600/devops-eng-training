@@ -1,6 +1,8 @@
 # TODO(everyone): 더하기, 빼기, 곱하기, 나누기 함수 정의하기
 
 def check_num(n1,n2):
+    n1 = str(n1)
+    n2 = str(n2)
     if n1.isdigit() and n2.isdigit():
         return False
     else:
