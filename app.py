@@ -18,24 +18,24 @@ def healthCheck():
 @app.route("/add")
 def app_add():
     n1, n2 = request.args.get('n1'), request.args.get('n2')
-    return add(n1, n2)
+    return add(str(n1), str(n2))
 
 @app.route("/sub")
 def app_sub():
     n1, n2 = request.args.get('n1'), request.args.get('n2')
-    return sub(n1, n2)
+    return sub(str(n1), str(n2))
 
 
 @app.route("/div")
 def app_div():
     n1, n2 = request.args.get('n1'), request.args.get('n2')
-    return div(n1, n2)
+    return div(str(n1), str(n2))
 
 
 @app.route("/mul")
 def app_mul():
     n1, n2 = request.args.get('n1'), request.args.get('n2')
-    return mul(n1, n2)
+    return mul(str(n1), str(n2))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='80', debug=True)

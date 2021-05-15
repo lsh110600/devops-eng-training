@@ -1,10 +1,9 @@
 # TODO(everyone): 더하기, 빼기, 곱하기, 나누기 함수 정의하기
 
 def check_num(n1,n2):
-
-    if n1.isdigit() == False:
-        return "Not a num"
-    elif n2.isdigit() == False:
+    if n1.isdigit() and n2.isdigit():
+        return False
+    else:
         return "Not a num"
 
 
