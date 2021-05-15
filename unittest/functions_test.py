@@ -36,7 +36,7 @@ def test_mul():
     # assert mul('a', 'b') == "Num1 is not a Number."
 
 def test_div():
-    assert mul(4, 2) == 2
+    assert div(4, 2) == 2
     # assert div(1, '2') == "Query Parameter's Data Type is not a String."
     # assert div('1', 2) == "Query Parameter's Data Type is not a String."
     # assert div('a', '2') == "Num1 is not a Number."
