@@ -5,5 +5,5 @@ import requests
 
 
 def test_health_check():
-    response = requests.get(url="http://localhost:3000/healthz")
+    response = requests.get(url="http://localhost:80/healthz")
     assert response.status_code == 200
