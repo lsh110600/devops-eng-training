@@ -34,9 +34,9 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flask pytest requests
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Run app.py
+      run: python app.py
     - name: Functions test with pytest
-      run: |
-        pytest unittest/functions_test.py
+      run:  pytest unittest/functions_test.py
     - name: Run apps and Health Check test with pytest
-      run: |
-        python app.py & sleep 10 & pytest integration/app_test.py
+      run:  pytest integration/app_test.py
