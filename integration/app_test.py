@@ -16,5 +16,5 @@ def api():
 
 
 def test_health_check():
-    response = requests.get(url="http://localhost:80/healthz")
+    response = requests.get(url="http://localhost:8080/healthz")
     assert response.status_code == 200
