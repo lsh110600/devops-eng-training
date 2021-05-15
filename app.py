@@ -37,5 +37,9 @@ def app_mul():
     n1, n2 = request.args.get('n1'), request.args.get('n2')
     return mul(n1, n2)
 
+
+def create_app():
+    return app
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='80', debug=True)
