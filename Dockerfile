@@ -3,7 +3,7 @@ FROM ubuntu:latest
 LABEL maintainer="lsh110600@naver.com"
 
 RUN mkdir -p /tmp
-WORKDIR /app
+WORKDIR /tmp
 
 RUN apt-get update
 RUN apt-get install pip -y
