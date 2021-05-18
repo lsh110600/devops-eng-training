@@ -9,6 +9,12 @@ def check_num(n1,n2):
     else:
         return "Not a num"
 
+def check_num_one(n1):
+    str_n1 = str(n1)
+    if str_n1.isdigit():
+        return False
+    else:
+        return "Not a num"
 
 def add(n1, n2):
     err = check_num(n1,n2)
@@ -46,7 +52,7 @@ def mul(n1, n2):
     return result
 
 def sqrt(n1):
-    err = check_num(n1)
+    err = check_num_one(n1)
     if err:
         return err
         
