@@ -6,7 +6,7 @@ import sys
 sys.path.append(
     os.path.dirname(os.path.dirname(__file__))
 )
-from functions import add, sub, div, mul
+from functions import add, sub, div, mul, sqrt
 
 
 def test_add():
@@ -45,5 +45,6 @@ def test_div():
     # assert div('2', '0') == 'division by zero'
 
 
-
-
+def test_sqrt():
+    assert sqrt(4) == 2
+    assert sqrt(5) == "root 5" 

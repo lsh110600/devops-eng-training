@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from functions import add, sub, div, mul
+from functions import add, sub, div, mul, sqrt
 app = Flask(__name__)
 
 
@@ -36,6 +36,11 @@ def app_div():
 def app_mul():
     n1, n2 = request.args.get('n1'), request.args.get('n2')
     return mul(n1, n2)
+
+@app.route("/sqrt")
+def app_sqrt():
+    n1= request.args.get('n1')
+    return sqrt(n1)
 
 
 def create_app():

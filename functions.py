@@ -1,4 +1,5 @@
 # TODO(everyone): 더하기, 빼기, 곱하기, 나누기 함수 정의하기
+import math 
 
 def check_num(n1,n2):
     str_n1 = str(n1)
@@ -42,4 +43,12 @@ def mul(n1, n2):
         return err
         
     result = float(n1)*float(n2)
+    return result
+
+def sqrt(n1):
+    err = check_num(n1)
+    if err:
+        return err
+        
+    result = math.sqrt(n1)
     return result
