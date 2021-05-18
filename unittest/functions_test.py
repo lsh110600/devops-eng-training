@@ -47,4 +47,4 @@ def test_div():
 
 def test_sqrt():
     assert sqrt(4) == 2
-    assert sqrt(5) == "root 5" 
+    assert sqrt(5) == 2.23606797749979 
